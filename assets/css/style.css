@@ -1,28 +1,25 @@
 @import url(reset.css);
 
 @font-face{
-    font-family: 'Akali';
-    src: url(/assets/font/akagipro-black.ttf);
+    font-family: Akali;
+    src: url(.Discord/assets/font/akagipro-black.ttf);
 }
 @font-face {
-    font-family: 'Luck';
-    src: url('DISCORD/assets/font/LuckiestGuy-Regular.ttf');
+    font-family: Luck;
+    src: url(./Discord/assets/font/LuckiestGuy-Regular.ttf);
 }
 *{
     font-family: sans-serif;
 }
 body, html {
-    overflow-x: hidden; /* Evita o scroll horizontal */
+    overflow-x: hidden; /* scroll horizontal */
 }
 h1{
-    font-family: 'Luck';
+    font-family: Luck;
     text-transform: uppercase;
 }
-/* body, html{
-    overflow-x: hidden;
-} */
 .header{
-    background-image: url('/assets/img/header/Header\ Background.svg');
+    background-image: url(.Discord/assets/img/header/Header\ Background.svg);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
