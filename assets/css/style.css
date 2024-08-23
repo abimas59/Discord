@@ -202,6 +202,7 @@ footer{
 
 @media screen and (min-width:600px){
     .header{
+        background-color: #23272A;
         background-image: url(/repositorios/Discord/assets/img/bk-grande.svg);
         background-size: cover;
         justify-items: center;
