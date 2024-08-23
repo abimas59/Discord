@@ -2,11 +2,11 @@
 
 @font-face{
     font-family: Akali;
-    src: url(./assets/font/akagipro-black.ttf);
+    src: url(/repositorios/Discord/assets/font/akagipro-black.ttf);
 }
 @font-face {
-    font-family: Luck;
-    src: url(./assets/font/LuckiestGuy-Regular.ttf);
+    font-family: 'Luck';
+    src: url(/repositorios/Discord/assets/font/LuckiestGuy-Regular.ttf);
 }
 *{
     font-family: sans-serif;
@@ -22,7 +22,8 @@ h1{
     overflow-x: hidden;
 } */
 .header{
-    background-image: url(./assets/img/header/Header\ Background.svg);
+    
+    background-image: url(/repositorios/Discord/assets/img/background.svg);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,7 +202,7 @@ footer{
 
 @media screen and (min-width:600px){
     .header{
-        background-image: url(/assets/img/bkg/bk-grande.svg);
+        background-image: url(/repositorios/Discord/assets/img/bk-grande.svg);
         background-size: cover;
         justify-items: center;
         text-align: center;
@@ -247,9 +248,6 @@ footer{
         height: auto;
     }
     #sec-4 section{
-        
-        border: violet 1px solid;
-        
         
     }
     #sec-4 .text {
