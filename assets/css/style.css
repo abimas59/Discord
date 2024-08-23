@@ -1,0 +1,286 @@
+@import url(reset.css);
+
+@font-face{
+    font-family: Akali;
+    src: url(/assets/font/akagipro-black.ttf);
+}
+@font-face {
+    font-family: Luck;
+    src: url(/assets/font/LuckiestGuy-Regular.ttf);
+}
+*{
+    font-family: sans-serif;
+}
+body, html {
+    overflow-x: hidden; /* Evita o scroll horizontal */
+}
+h1{
+    font-family: Luck;
+    text-transform: uppercase;
+}
+/* body, html{
+    overflow-x: hidden;
+} */
+.header{
+    background-image: url(/assets/img/header/Header\ Background.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: grid;
+    margin: auto;
+    grid:
+    "topo topo" 1fr
+    "meio meio" 1fr
+    "button button"1fr;
+    padding: 15px;
+    align-content: center;
+    gap: 20px;
+}
+.header h1{
+    padding: 15px;
+    color: white;
+    font-size: 2.5rem;
+    width: 300px;
+    font-weight: 100;
+    grid-area: topo;
+}
+
+h2{
+    font-family: Akali;
+    color: #23272A;
+}
+
+.buttons{
+    grid-area: button;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+button:hover{
+    cursor: pointer;
+}
+button{
+    padding: 15px;
+    background-color: white;
+    border-radius: 25px;
+    font-size:medium ;
+    width: 320px;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+.button-b{
+    background-color: #23272A;
+    color: white;
+    font-size: large;
+}
+
+.header p{
+    padding: 15px;
+    grid-area: meio;
+    width: 300px;
+    color: white;
+}
+#sec-1{
+    display: grid;
+    grid:
+    "topo-a topo-a" 1fr
+    "meio-a meio-a" 1fr
+    "button-a button-a"1fr;
+    gap: 10px;
+    padding: 15px;
+    align-content: center;
+    height: 500px;
+}
+#sec-1 img{
+    grid-area: topo-a;
+}
+#sec-1 > .text > h2{
+    grid-area: meio-a;
+}
+#sec-1 section{
+    grid-area: button-a;
+    padding: 15px;
+    width: 330px;
+}
+.secao-a{
+    padding: 30px;
+    gap: 20px;
+    max-height: 60vh;
+}
+.secao-b{
+    padding: 30px;
+    gap: 20px;
+    max-height: 60vh;
+}
+.secao-b h1{
+    color: #23272A;
+    font-weight: 100;
+    padding: 10px;
+    gap: 10px;
+}
+#sec-2{
+    display: grid;
+    grid:
+    "topo-2 topo-2" 1fr
+    /* "meio-2 meio-2" 1fr */
+    "button-2 button-2"1fr;
+    gap: 10px;
+    padding: 15px;
+    align-content: center;
+}
+#sec-2 section{
+    grid-area: button-2;
+}
+#sec-2 img{
+    grid-area: topo-2;
+}
+
+footer{
+    background-color: #23272A;
+}
+
+.secao-b{
+    background-color: #F6F6F6;
+}
+section h2{
+    width: 300px;
+}
+/* ///////////////////////////////// */
+#sec-3{
+    display: grid;
+    grid:
+    "topo-3 topo-3" 1fr
+    /* "meio-3 meio-3" 1fr */
+    "button-3 button-3"1fr;
+    gap: 10px;
+    padding: 15px;
+    align-content: center;
+    
+}
+#sec-3 img{
+    grid-area: topo-3;
+}
+#sec-3  h2{
+    grid-area: meio-3;
+}
+#sec-3 section{
+    grid-area: button-3;
+    padding: 15px;
+    width: 330px;
+}
+#sec-4{
+    display: grid;
+    grid:
+    "topo-4 topo-4" 1fr
+    "button-4 button-4"1fr;
+    gap: 10px;
+    padding: 15px;
+    align-content: center;
+}
+#sec-4 picture{
+    grid-area:  button-4;
+    
+}
+#sec-4 section{
+    display: flexbox;
+    flex-direction: column;
+    grid-area: topo-4;
+}
+#sec-4 h2{
+    font-family: Luck;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/*                              ///////////////////////*/
+
+@media screen and (min-width:600px){
+    .header{
+        background-image: url(/assets/img/bkg/bk-grande.svg);
+        background-size: cover;
+        justify-items: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        height: 600px;
+    }
+    .secao-b, .secao-a{
+        justify-content: center;
+        height: 600px;
+    }
+    .secao-b img, .secao-a img{
+        height: 100%;
+        width: 100%;
+    }
+    #sec-3,#sec-1,#sec-2, #sec-4{
+        display: flex;
+    }
+    #sec-2 h2{
+        order: -1;
+        align-content: start;
+        display: inline-block;
+        justify-content: right;
+    }
+    #sec-2 section {
+        order: -1;
+        align-content: center;
+        display: inline-block;
+        max-width: 600px;
+        text-align: right;
+        display: inline-block;
+    }
+    #sec-2 .text p,h2 {
+        text-align: right;
+        justify-content: end;
+        text-align: left;
+        display: inline-block;
+        width: 300px;
+    }
+    #sec-4 {
+        flex-direction: column;
+        align-items: start;
+        height: auto;
+    }
+    #sec-4 section{
+        
+        border: violet 1px solid;
+        
+        
+    }
+    #sec-4 .text {
+        text-align: center;
+        align-self: center;
+        display: inline-block;
+    }
+    #sec-4 picture,#sec-4 h2, #sec-4 p{
+        align-self: center;
+        width: 100%;
+        height: auto;
+        max-width: 784px;
+    }
+    #possivel{
+        align-self: flex-end;
+        justify-self: end;
+        align-items: end;
+    }
+    h2{
+        font-size:2.6rem ;
+    }
+    h1{
+        font-size: 3.rem;
+    }
+    p{
+        width: 70%;
+    }
+    .header p{
+        width:70%;
+    }
+    .buttons{
+        display: inline-flex;
+    }
+}
