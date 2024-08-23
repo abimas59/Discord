@@ -2,11 +2,11 @@
 
 @font-face{
     font-family: Akali;
-    src: url(/assets/font/akagipro-black.ttf);
+    src: url(./assets/font/akagipro-black.ttf);
 }
 @font-face {
     font-family: Luck;
-    src: url(/assets/font/LuckiestGuy-Regular.ttf);
+    src: url(./assets/font/LuckiestGuy-Regular.ttf);
 }
 *{
     font-family: sans-serif;
@@ -22,7 +22,7 @@ h1{
     overflow-x: hidden;
 } */
 .header{
-    background-image: url(/assets/img/header/Header\ Background.svg);
+    background-image: url(./assets/img/header/Header\ Background.svg);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
